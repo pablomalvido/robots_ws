@@ -1,0 +1,2 @@
+dependent_joints:
+  $(arg prefix)_finger_right_joint: {parent: $(arg prefix)_finger_left_joint, factor: -1 }

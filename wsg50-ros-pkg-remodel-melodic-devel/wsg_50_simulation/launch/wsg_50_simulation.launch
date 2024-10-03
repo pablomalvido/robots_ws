@@ -1,0 +1,15 @@
+<launch>
+
+  <arg name="prefix" doc="Prefix for multiple instances"/>
+
+  <rosparam file="$(find wsg_50_simulation)/urdf/wsg_50_dependent_joints_sim.yaml" subst_value="true"/>
+
+  <include file="$(find wsg_50_simulation)/launch/internal/wsg_50_sim_hw.launch.xml">
+    <arg name="prefix" value="$(arg prefix)"/>
+  </include>
+
+  <include file="$(find wsg_50_simulation)/launch/internal/wsg_50_sim_controllers.launch.xml">
+    <arg name="prefix" value="$(arg prefix)"/>
+  </include>
+
+</launch>

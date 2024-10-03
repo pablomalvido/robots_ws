@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Dual gripper launcher -->
+	<include file="$(find wsg_50_driver)/launch/dual_wsg_50_tcp.launch"></include>
+
+	<!-- Action servers for both grippers -->
+	<include file="$(find rviz_test)/launch/gripper_action_server.launch"></include>
+</launch>
+

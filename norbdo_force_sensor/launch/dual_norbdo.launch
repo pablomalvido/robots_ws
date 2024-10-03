@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Dual force sensor launcher -->
+	<node ns="left_norbdo" name="norbdo_fs"  pkg="norbdo_force_sensor" type="ftsensoreth.py" output="screen">
+		<param name="ip" type="string" value="10.0.0.44"/>
+		<param name="port" type="int" value="2001"/>
+	</node>
+
+	<node ns="right_norbdo" name="norbdo_fs"  pkg="norbdo_force_sensor" type="ftsensoreth.py" output="screen">
+		<param name="ip" type="string" value="10.0.0.43"/>
+		<param name="port" type="int" value="2001"/>
+	</node>
+
+</launch>
+

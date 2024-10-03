@@ -1,0 +1,13 @@
+<launch>
+
+  <arg name="prefix" doc="Prefix for multiple instances"/>
+
+  <group ns="$(arg prefix)">
+
+    <rosparam file="$(find wsg_50_simulation)/controllers/wsg_50_sim_hw.yaml" subst_value="true"/>
+
+    <node name="wsg_50_sim_hw" pkg="ros_control_boilerplate" type="sim_hw_main"/>
+
+  </group>
+
+</launch>

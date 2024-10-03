@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node ns="left_wsg" name="wsg_50_driver"  pkg="wsg_50_driver" type="wsg_50_ip">
+    <param name="ip" type="string" value="10.0.0.20"/>
+    <param name="port" type="int" value="1000"/>
+  </node>
+
+  <node ns="right_wsg" name="wsg_50_driver"  pkg="wsg_50_driver" type="wsg_50_ip">
+    <param name="ip" type="string" value="10.0.0.21"/>
+    <param name="port" type="int" value="1000"/>
+  </node>
+
+</launch>
+

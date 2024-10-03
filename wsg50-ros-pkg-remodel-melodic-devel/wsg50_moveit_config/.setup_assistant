@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: wsg_50_simulation
+    relative_path: urdf/wsg_50.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/wsg_50.srdf
+  CONFIG:
+    author_name: my_name
+    author_email: my_email@email.com
+    generated_timestamp: 1679733474

@@ -1,0 +1,14 @@
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 1000
+
+PositionJointInterface_trajectory_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - $(arg prefix)_finger_left_joint
+    - $(arg prefix)_finger_right_joint
+  constraints:
+    goal_time: 0.5
+  state_publish_rate: 25
+  action_monitor_rate: 30
+  stop_trajectory_duration: 0
